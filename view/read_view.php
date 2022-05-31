@@ -231,7 +231,6 @@
                 document.getElementById("month_span").innerHTML = 1 + "月";
             }
             $("#user_name option").remove();
-            //物件中的某一種物件(空白)：$("#div1 p").addClass('d1');
             sel_name();
         })
         $('#month_select').change(function() {
@@ -295,7 +294,6 @@
         }).done(function(res) {
             // console.log(res);
             var str = JSON.parse(res);
-            //我在schedule_controller裡面有寫個取當年月的工讀生名字，你把他接到你的名字的下拉式選單，但記得要跟年月做配合
             addName(str);
 
         }).fail(function(error) {
@@ -352,7 +350,6 @@
     //         console.log(res);
     //         var obj = JSON.parse(res);
     //         console.log(obj);
-    //         //塞資料塞在這
     //         // showTable(obj);
     //     })
     // };
