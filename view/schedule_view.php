@@ -121,7 +121,6 @@
     $("#1-all").click(function() {
         if ($("#1-all").prop("checked")) {
             $("input[class='1']").prop("checked", true);
-            //$('元素[屬性名=屬性值]')：獲取具有這個屬性=這個屬性值的DOM物件
         } else {
             $("input[class='1']").prop("checked", false);
         }
@@ -275,7 +274,6 @@
                         total = [];
                         $("input[name*='chk']").prop("checked", false);
                         $("input[name*='user']").val("");
-                        //$('元素[屬性名*=屬性值]')：獲取具有這個屬性且屬性值含有一個指定字串的 DOM 物件
                     } else {
                         alert('請勾選');
                     }
